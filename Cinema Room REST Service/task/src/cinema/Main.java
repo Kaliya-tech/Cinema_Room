@@ -2,8 +2,7 @@ package cinema;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -29,8 +28,14 @@ public class Main {
 
         public SeatsController() {
             for (int row = 1; row <= totalRows; row++) {
+                int price = 0;
+                if (row <= 4) {
+                    price = 10;
+                } else {
+                    price = 8;
+                }
                 for (int column = 1; column <= totalColumns; column++) {
-                    seats.add(new Seat(row, column));
+                    seats.add(new Seat(row, column, price));
                 }
             }
             cinemaRoom.put("total_rows", totalRows);
@@ -41,5 +46,15 @@ public class Main {
         @GetMapping("/seats")
         private Map<String, Object> showSeats() {
             return cinemaRoom;
+        }
+
+        @PostMapping("/purchase")
+        private Map<String, Object> bookSeat(@RequestParam int row, @RequestParam int column,
+                                            @RequestParam int price) {
+
+            return (Map<String, Object>) cinemaRoom.get(row);
+            //return seats.get(row);
+
+         //   return "\"error\": \"The ticket has been already purchased!\"";
         }
     }

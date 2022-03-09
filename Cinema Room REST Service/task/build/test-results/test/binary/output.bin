@@ -9,18 +9,21 @@
 ) =========|_|==============|___/=/_/_/_/
 + :: Spring Boot ::                (v2.5.6)
 
-Š2022-03-02 19:44:44.337  INFO 21478 --- [    Test worker] cinema.Main                              : Starting Main using Java 17.0.2 on kaliyas-PC with PID 21478 (started by kaliya in /home/kaliya/IdeaProjects/Cinema Room REST Service/Cinema Room REST Service/task)
-¦2022-03-02 19:44:44.342  INFO 21478 --- [    Test worker] cinema.Main                              : No active profile set, falling back to default profiles: default
-“2022-03-02 19:44:45.963  INFO 21478 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
-2022-03-02 19:44:45.978  INFO 21478 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-•2022-03-02 19:44:45.979  INFO 21478 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
-˜2022-03-02 19:44:46.083  INFO 21478 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-¥2022-03-02 19:44:46.083  INFO 21478 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
-›2022-03-02 19:44:47.006  INFO 21478 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-¢2022-03-02 19:44:47.054  INFO 21478 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
-›2022-03-02 19:44:47.074  INFO 21478 --- [    Test worker] cinema.Main                              : Started Main in 3.219 seconds (JVM running for 4.087)
-Ÿ2022-03-02 19:44:47.485  INFO 21478 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-Ž2022-03-02 19:44:47.485  INFO 21478 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-†2022-03-02 19:44:47.488  INFO 21478 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Š2022-03-03 20:21:06.813  INFO 44724 --- [    Test worker] cinema.Main                              : Starting Main using Java 17.0.2 on kaliyas-PC with PID 44724 (started by kaliya in /home/kaliya/IdeaProjects/Cinema Room REST Service/Cinema Room REST Service/task)
+¦2022-03-03 20:21:06.817  INFO 44724 --- [    Test worker] cinema.Main                              : No active profile set, falling back to default profiles: default
+“2022-03-03 20:21:08.488  INFO 44724 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-03-03 20:21:08.503  INFO 44724 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+•2022-03-03 20:21:08.504  INFO 44724 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+˜2022-03-03 20:21:08.603  INFO 44724 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+¥2022-03-03 20:21:08.604  INFO 44724 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1720 ms
+›2022-03-03 20:21:09.467  INFO 44724 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+¢2022-03-03 20:21:09.517  INFO 44724 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+›2022-03-03 20:21:09.536  INFO 44724 --- [    Test worker] cinema.Main                              : Started Main in 3.212 seconds (JVM running for 4.131)
+Ÿ2022-03-03 20:21:09.953  INFO 44724 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Ž2022-03-03 20:21:09.954  INFO 44724 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+†2022-03-03 20:21:09.957  INFO 44724 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 [1;31m
 Start test 2[0m
+[1;31m
+Start test 3[0m
+„2022-03-03 20:21:10.150  WARN 44724 --- [io-28852-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'row' for method parameter type int is not present]
